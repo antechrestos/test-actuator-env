@@ -1,0 +1,14 @@
+my:
+  properties:
+    with-dashes: 1
+    withoutDashes: 2
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - env
+  endpoint:
+    env:
+      show-values: always
